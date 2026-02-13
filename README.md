@@ -12,7 +12,7 @@ Design pattrens:
 Database base:
 
 		- To Generating Migration and Syncing with Database, open the NuGet Package Manager Console in Visual Studio by selecting Tools => NuGet Package Manager => Package Manager Console. Then, execute the command.
-		- "Add-Migration ECommerceDB"
+		- "Add-Migration PoscicleCoDB"
 		- Once build is succeded. Which means after creating the migration file, we need to update the database using the "Update-Database" command. you can use–verbose option to view the generated SQL statements executed in the target database.
 		- "Update-Database -Verbose"
 		- Once the above command is executed successfully, it will generate and execute the required SQL Statements in the defined database.
