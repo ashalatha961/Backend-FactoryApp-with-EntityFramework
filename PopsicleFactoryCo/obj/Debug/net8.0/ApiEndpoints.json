@@ -1,0 +1,131 @@
+[
+  {
+    "ContainingType": "PopsicleFactoryCo.Controllers.PopsicleInventoryController",
+    "Method": "CreateNewPopsicle",
+    "RelativePath": "PopsicleInventory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "popsicle",
+        "Type": "PopsicleFactoryCo.Models.PopsicleModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "CreateNewPopsicle"
+    ],
+    "EndpointName": "CreateNewPopsicle"
+  },
+  {
+    "ContainingType": "PopsicleFactoryCo.Controllers.PopsicleInventoryController",
+    "Method": "GetListOfAllPopsicles",
+    "RelativePath": "PopsicleInventory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[PopsicleFactoryCo.Models.PopsicleModel, PopsicleFactoryCo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "GetPopsicleData {All} / {Based on ID} / {SearchTerm}"
+    ],
+    "EndpointName": "GetListOfAllPopsicles"
+  },
+  {
+    "ContainingType": "PopsicleFactoryCo.Controllers.PopsicleInventoryController",
+    "Method": "GetPopsicleWithId",
+    "RelativePath": "PopsicleInventory/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "GetPopsicleData {All} / {Based on ID} / {SearchTerm}"
+    ],
+    "EndpointName": "GetPopsicleWithId"
+  },
+  {
+    "ContainingType": "PopsicleFactoryCo.Controllers.PopsicleInventoryController",
+    "Method": "UpdatePopsicle",
+    "RelativePath": "PopsicleInventory/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "popsicle",
+        "Type": "PopsicleFactoryCo.Models.PopsicleModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "UpdateExistingPopsicleData"
+    ],
+    "EndpointName": "UpdatePopsicle"
+  },
+  {
+    "ContainingType": "PopsicleFactoryCo.Controllers.PopsicleInventoryController",
+    "Method": "DeletePopsicle",
+    "RelativePath": "PopsicleInventory/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "DeleteExistingPopsicle"
+    ],
+    "EndpointName": "Delete Popsicle"
+  },
+  {
+    "ContainingType": "PopsicleFactoryCo.Controllers.PopsicleInventoryController",
+    "Method": "SearchForPopsicles",
+    "RelativePath": "PopsicleInventory/search/{searchItem}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchItem",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "GetPopsicleData {All} / {Based on ID} / {SearchTerm}"
+    ],
+    "EndpointName": "SearchForPopsicles"
+  }
+]

@@ -1,0 +1,6 @@
+@PopsicleFactoryCo_HostAddress = http://localhost:5018
+
+GET {{PopsicleFactoryCo_HostAddress}}/Popsicle/
+Accept: application/json
+
+###
