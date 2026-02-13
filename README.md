@@ -1,5 +1,5 @@
 *** Backend dotnet application built using C#, .NETcore 8 and connected to database using a entity framework.
-*** It is a popsicle factory where we can use swagger and hit end point and apply CRUD operation on factory data to persist data across application
+*** It is a popsicle factory where we can use swagger and hit end point and apply CRUD operation on factory data to persist data across application.
 
 Programming language & Framworks: 
 
@@ -16,7 +16,7 @@ Database base:
 		- Once build is succeded. Which means after creating the migration file, we need to update the database using the "Update-Database" command. you can use–verbose option to view the generated SQL statements executed in the target database.
 		- "Update-Database -Verbose"
 		- Once the above command is executed successfully, it will generate and execute the required SQL Statements in the defined database.
-		- Now sign in to you SSMS and can find the ECommerceDB under your DB and can see all the tables created matching with Entity classes / database tables that we specified as the DbSet property. Ex: address, Categories, Customers, Memborship Tiers etc., 
+		- Now sign in to you SSMS and can find the ECommerceDB under your DB and can see all the tables created matching with Entity classes / database tables that we specified as the DbSet property. 
 
 Testing framework: 
 		
